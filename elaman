@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--每日计划-->
+        <meta charset="UTF-8"></meta>
+        <title>英语计划</title>
+        <style>
+            #content {
+                display: none;
+            }
+            </style>
+    </head>
+    <body>
+        <!-- 密码输入区域 -->
+  <div id="login">
+    <h2>请输入密码进入</h2>
+    <input type="password" id="passwordInput" placeholder="密码">
+    <button onclick="checkPassword()">进入</button>
+    <p id="message" style="color:red;"></p>
+  </div>
+
+  <!-- 被保护的内容区域 -->
+  <div id="content">
+        <!--每天做-->
+        <H1>这个是我的英语计划</H1>
+        <P>第一站</P>
+        <!--視頻-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/r5wF9aMTTjc?si=MISPJU_4Pw08bbDp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <hr/>
+        <h2>学习</h2>
+        <p>第二站</p>
+        <!--网站-->
+        <a href="https://www.youtube.com/watch?v=CLUPkcLQm64">elaman</a>
+        <a href="elaman (2).jpg">家人</a>
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTd49WM04YqEkhYcL4rPsO1-XnCXKUHEA-4Q&s"/>
+        <hr/>
+        <h3>学习计划</h3>
+        <p>第三站</p>
+        <!--ela-->
+        <table>
+            <tr>
+                <td>22/06/2026</td>
+                <td>雅思7.5</td>
+                <td>考上nazarbay</td>
+            </tr>
+        </table>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ST969lNJ8Rs?si=-hghRimmM7USa5cq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <hr/>
+        <h3>进入教学 </h3>
+        <p>第四站</p>
+        <div>     
+            <input type="text"placeholder="请输入电话"/>
+            <br/>
+            <br/>
+            <input type="password"placeholder="请输入密码"/>
+            <br/>
+            <br/>
+            <input type="checkbox"/>
+            <input type="file"/>
+           <input type="range" min="0.2" max="1.5" step="0.01" value="1" id="brightnessRange">
+  <script>
+    document.getElementById('brightnessRange').addEventListener('input', function() {
+      document.body.style.filter = 'brightness(' + this.value + ')';
+    });
+  </script> 
+            <input type="date"/>
+            <br/>
+            <br/>
+            <textarea></textarea>
+
+        </div>
+        </div>
+        <script>
+    const correctPassword = "ELAMAN123456"; // ← 你可以改成你想要的密码
+
+    function checkPassword() {
+      const input = document.getElementById("passwordInput").value;
+      if (input === correctPassword) {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      } else {
+        document.getElementById("message").textContent = "密码错误，请重试。";
+      }
+    }
+  </script>
+    </body>
+</html>
